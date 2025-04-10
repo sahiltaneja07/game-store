@@ -9,6 +9,11 @@ export const routes: Routes = [
       loadRemoteModule('gameList', './Component').then((m) => m.AppComponent),
   },
   {
+    path: 'games/:gameID',
+    loadComponent: () =>
+      loadRemoteModule('gameDetail', './Component').then((m) => m.AppComponent),
+  },
+  {
     path: '**',
     redirectTo: 'games',
   },
