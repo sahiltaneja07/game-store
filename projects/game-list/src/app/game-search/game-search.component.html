@@ -1,0 +1,9 @@
+<div>
+  <form [formGroup]="gameForm" (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="search for a game.."
+      formControlName="gameQuery"
+    />
+  </form>
+</div>

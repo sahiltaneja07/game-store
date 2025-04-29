@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
     styleUrl: './game-listing.component.scss'
 })
 export class GameListingComponent {
-    increment(): void {
-        const event = new CustomEvent('increment', {
-            detail: 'Listing'
-        });
-        dispatchEvent(event);
-    }
+    // increment(): void {
+    //     const event = new CustomEvent('increment', {
+    //         detail: 'Listing'
+    //     });
+    //     dispatchEvent(event);
+    // }
 }
